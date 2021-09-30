@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/Barlow-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("../fonts/static/Fraunces/Fraunces-Black.ttf") format("truetype");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container{
+    width: 1440px;
+    height: 4174px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    height: 800px;
+    color: white;
+    background-image: url("../images/desktop/image-header.jpg");
+    background-size: 100%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+    margin-left: 40px;
+}
+
+.logo{
+
+}
+
+.logo__img{
+    height: 33px;
+}
+
+.links{
+    margin-top: 8px;
+    margin-right: 23px;
+}
+
+.links__a{
+    color: white;
+    text-decoration: none;
+    font-family: "Barlow";
+    margin: 0 23px;
+    font-size: 18px;
+}
+
+#contact{
+    background-color: white;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    font-family: "Fraunces";
+    font-size: 15px;
+    padding: 18px 30px;
+    border-radius: 30px;
+
+}
+
+.intro{
+    font-family: "Fraunces";
+    font-size: 55px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-top: 122px;
+    position: relative;
+}
+
+.arrow{
+    position: absolute;
+    top: 429px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%); 
+}
+
+.mozaik{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo{
+    width: 50%;
+    height: 600px;
+}
+
+#first{
+
+}
+
+#second{
+    background-image: url("../images/desktop/image-transform.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#third{
+    background-image: url("../images/desktop/image-stand-out.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#fourth{
+
+}
+
+#fifth{
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#sixth{
+    background-image: url("../images/desktop/image-photography.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.client{
+
+    height: 777px;
+}
+
+.images{
+    display: flex;
+}
+
+.images__image{
+    width: 360px;
+    height: 447px;
+    background-color: red;
+}
+
+#image1{
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+    background-size: 100%;
+
+}
+
+#image2{
+    background-image: url("../images/desktop/image-gallery-orange.jpg");
+    background-size: 100%;
+}
+
+#image3{
+    background-image: url("../images/desktop/image-gallery-cone.jpg");
+    background-size: 100%;
+}
+
+#image4{
+    background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+    background-size: 100%;
+}
+
+footer{
+    background-color: #90d4c5;
+    height: 350px;
+}
+
+.attribution{
+    display: none;
+}
