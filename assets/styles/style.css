@@ -67,7 +67,11 @@ header{
     font-size: 15px;
     padding: 18px 30px;
     border-radius: 30px;
+}
 
+#contact:hover{
+    background-color: #6fcfff;
+    color: hsl(0, 0%, 100%);
 }
 
 .intro{
@@ -88,51 +92,211 @@ header{
     filter: invert(100%); 
 }
 
+#arrow2{
+    top: 399px;
+    clip-path: inset(0 0 24px 0);               /*coupe l'image de 24px en partant du bas (top right bottom left)*/
+}
+
 .mozaik{
     display: flex;
     flex-wrap: wrap;
 }
 
 .photo{
-    width: 50%;
+    width: 720px;
     height: 600px;
-}
-
-#first{
-
 }
 
 #second{
     background-image: url("../images/desktop/image-transform.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 #third{
     background-image: url("../images/desktop/image-stand-out.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
 }
 
-#fourth{
+.photo__text{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    color: hsl(212, 27%, 19%);
+}
 
+#text1{
+    margin: 0 0 0 165px;
+}
+
+#text4{
+    margin: 0 0 0 110px;
+}
+
+.photo__text__title{
+    font-size: 40px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    line-height: 50px;
+    width: 350px;
+    margin: 158px 0 30px 0;
+}
+
+#title1{
+    width: 350px;
+}
+
+#title4{
+    width: 450px;
+}
+
+.photo__text__article{
+    font-size: 18px;
+    font-family: "Barlow";
+    font-weight: 700;
+    margin-bottom: 45px;
+    line-height: 30px;
+    opacity: 60%;
+}
+
+.photo__text__link{
+    font-size: 15px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0 9px;
+    position: relative;
+    color: hsl(212, 27%, 19%);
+    z-index: 1;
+}
+
+.photo__text__link::before{
+    content: "";
+    position: absolute;
+    width: 136px;
+    height: 10px;
+    opacity: 26%;
+    border-radius: 25px;
+    left: 0;
+    bottom: -5px;
+    z-index: -1;
+}
+
+#link1::before{
+    background-color: hsl(51, 100%, 49%);
+}
+
+#link2::before{
+    background-color: hsl(7, 99%, 70%);
+}
+
+.photo__text__link:hover::before{
+    opacity: 100%;
+
+}
+#fifth, #sixth{
+    display: flex;
+    justify-content: center;
 }
 
 #fifth{
     background-image: url("../images/desktop/image-graphic-design.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
+    color: #25564b;
 }
 
 #sixth{
     background-image: url("../images/desktop/image-photography.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
+    color: #19536b;
+}
+
+.photo__text-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+
+.photo__text-image__title{
+    font-size: 28px;
+    font-family: "Fraunces";
+    padding-top: 350px;
+    text-align: center;
+}
+
+.photo__text-image__article{
+    margin-top: 32px;
+    padding: 0 30px;
+    text-align: center;
+    line-height: 25px;
+    font-family: "Barlow";
+    font-weight: 700;
 }
 
 .client{
-
     height: 777px;
+    display: flex;
+    flex-direction: column;
+}
+
+.client__title{
+    margin-top: 163px;
+    text-align: center;
+    font-family: "Fraunces";
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    opacity: 40%;
+}
+
+.client__cards{
+    display: flex;
+    justify-content: center;
+    width: 1300px;
+    margin: 83px auto;
+}
+
+.client__cards__card{
+    width: 365px;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client__cards__card__image{
+    width: 72px;
+    height: 72px;
+    border-radius: 50px;
+}
+
+.client__cards__card__text{
+    text-align: center;
+    padding: 58px 10px 0 10px;
+    line-height: 32px;
+    font-family: "Barlow";
+    font-size: 18px;
+    font-weight: 900;
+    opacity: 70%;
+}
+
+.client__cards__card__name{
+    padding-top: 72px;
+    margin-right: 14px;
+    font-size: 18px;
+    font-family: "Fraunces";
+    
+}
+
+.client__cards__card__job{
+    padding-top: 16px;
+    margin-right: 15px;
+    font-family: "Barlow";
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 50%;
 }
 
 .images{
@@ -142,13 +306,11 @@ header{
 .images__image{
     width: 360px;
     height: 447px;
-    background-color: red;
 }
 
 #image1{
     background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
     background-size: 100%;
-
 }
 
 #image2{
@@ -169,6 +331,54 @@ header{
 footer{
     background-color: #90d4c5;
     height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo{
+    margin-top: 72px;
+    margin-left: -60px;
+}
+
+.footer__logo__img{
+    width: 138%;
+}
+
+.footer__links{
+    display: flex;
+    justify-content: space-between;
+    width: 295px;
+    margin-top: 41px;
+}
+
+.footer__links__a{
+    font-family: "Barlow";
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #25564b;
+}
+
+.footer__links__a:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+.footer__contact{
+    margin: 91px 0 0 12px;
+    width: 200px;
+}
+
+.footer__contact__link{
+    text-decoration: none;
+}
+
+.footer__contact__link__img{
+    padding: 0 12px;
+}
+
+.footer__contact__link__img:hover{ 
+    filter: invert(100%) brightness(200%);
 }
 
 .attribution{
